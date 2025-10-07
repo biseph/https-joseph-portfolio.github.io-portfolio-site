@@ -15,7 +15,6 @@
 </head>
 <body class="text-gray-800">
 
-    <!-- Header Section -->
     <header class="bg-white shadow-sm py-8 mb-8">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col items-center text-center">
@@ -26,20 +25,18 @@
                 <p class="text-xl text-gray-600 mt-2">Virtual Assistant</p>
                 <div class="flex space-x-4 mt-4 text-gray-500">
                     <p class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.373 18 3 13.627 3 8V6a1 1 0 011-1z" />
-                      </svg>0915-934-2201</p>
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.373 18 3 13.627 3 8V6a1 1 0 011-1z" />
+                        </svg>0915-934-2201</p>
                     <p class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                      </svg>biarejoseph8@gmail.com</p>
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>biarejoseph8@gmail.com</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Profile Section -->
         <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
             <h2 class="text-2xl font-semibold mb-4 text-gray-900">Profile</h2>
             <p class="text-gray-700 leading-relaxed">
@@ -47,63 +44,57 @@
             </p>
         </section>
 
-        <!-- Skills Section -->
         <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
             <h2 class="text-2xl font-semibold mb-4 text-gray-900">Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gray-100 rounded-lg p-4 transition duration-300 transform hover:scale-105">
+                <div class="bg-gray-100 rounded-lg p-4 transition duration-300 transform hover:scale-105 cursor-pointer" onclick="openModal('virtualAssistance')">
                     <h3 class="font-medium text-lg text-gray-900">Virtual Assistance</h3>
                     <p class="text-gray-600 text-sm">Scheduling, email handling, and general administrative support.</p>
                 </div>
-                <div class="bg-gray-100 rounded-lg p-4 transition duration-300 transform hover:scale-105">
+                <div class="bg-gray-100 rounded-lg p-4 transition duration-300 transform hover:scale-105 cursor-pointer" onclick="openModal('customerRelations')">
                     <h3 class="font-medium text-lg text-gray-900">Customer Relations</h3>
                     <p class="text-gray-600 text-sm">Building and maintaining strong relationships with clients, focusing on satisfaction.</p>
                 </div>
-                <div class="bg-gray-100 rounded-lg p-4 transition duration-300 transform hover:scale-105">
+                <div class="bg-gray-100 rounded-lg p-4 transition duration-300 transform hover:scale-105 cursor-pointer" onclick="openModal('problemSolving')">
                     <h3 class="font-medium text-lg text-gray-900">Problem-Solving</h3>
                     <p class="text-gray-600 text-sm">Resolving complex issues and handling complaints with a professional and empathetic approach.</p>
                 </div>
-                <div class="bg-gray-100 rounded-lg p-4 transition duration-300 transform hover:scale-105">
+                <div class="bg-gray-100 rounded-lg p-4 transition duration-300 transform hover:scale-105 cursor-pointer" onclick="openModal('communication')">
                     <h3 class="font-medium text-lg text-gray-900">Communication</h3>
                     <p class="text-gray-600 text-sm">Strong command of English and Filipino, ensuring clear and effective communication.</p>
                 </div>
-                <div class="bg-gray-100 rounded-lg p-4 transition duration-300 transform hover:scale-105">
+                <div class="bg-gray-100 rounded-lg p-4 transition duration-300 transform hover:scale-105 cursor-pointer" onclick="openModal('timeManagement')">
                     <h3 class="font-medium text-lg text-gray-900">Time Management</h3>
                     <p class="text-gray-600 text-sm">Efficiently managing tasks and prioritizing to meet deadlines in a fast-paced environment.</p>
                 </div>
-                <div class="bg-gray-100 rounded-lg p-4 transition duration-300 transform hover:scale-105">
+                <div class="bg-gray-100 rounded-lg p-4 transition duration-300 transform hover:scale-105 cursor-pointer" onclick="openModal('salesRetention')">
                     <h3 class="font-medium text-lg text-gray-900">Sales & Retention</h3>
                     <p class="text-gray-600 text-sm">Experience in promoting services, highlighting benefits, and retaining customers.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Work Experience Section -->
         <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
             <h2 class="text-2xl font-semibold mb-4 text-gray-900">Work Experience</h2>
             <div class="space-y-6">
-                <!-- Virtual Assistant -->
                 <div class="border-l-4 border-blue-500 pl-4">
                     <h3 class="text-xl font-semibold text-gray-900">Virtual Assistant</h3>
                     <p class="text-lg font-medium text-gray-700">Little Racer Party Rentals</p>
                     <p class="text-gray-500 text-sm">January 2025 - August 2025</p>
                     <p class="mt-2 text-gray-700">Managed administrative tasks including scheduling, email management, and customer inquiries. Assisted in coordinating event bookings, payments, and client communications.</p>
                 </div>
-                <!-- Personal Advocate -->
                 <div class="border-l-4 border-blue-500 pl-4">
                     <h3 class="text-xl font-semibold text-gray-900">Personal Advocate</h3>
                     <p class="text-lg font-medium text-gray-700">Cigna Health Insurance (Concentrix Philippines)</p>
                     <p class="text-gray-500 text-sm">October 2023 - December 2024</p>
                     <p class="mt-2 text-gray-700">Resolved customer complaints, billing discrepancies, and claim processing issues. Ensured timely claim payments and delivered empathetic support to policyholders.</p>
                 </div>
-                <!-- Support Ambassador -->
                 <div class="border-l-4 border-blue-500 pl-4">
                     <h3 class="text-xl font-semibold text-gray-900">Support Ambassador</h3>
                     <p class="text-lg font-medium text-gray-700">Airbnb Resolutions Team (Telus International, Taguig)</p>
                     <p class="text-gray-500 text-sm">April 2023 - August 2023</p>
                     <p class="mt-2 text-gray-700">Investigated and resolved customer concerns regarding stays. Negotiated fair resolutions balancing guest satisfaction and company policy. Enhanced customer trust by delivering professional and empathetic service.</p>
                 </div>
-                <!-- Sales & Retentions Representative -->
                 <div class="border-l-4 border-blue-500 pl-4">
                     <h3 class="text-xl font-semibold text-gray-900">Sales & Retentions Representative</h3>
                     <p class="text-lg font-medium text-gray-700">Virgin Media UK (Sitel Philippines, Quezon City)</p>
@@ -113,7 +104,6 @@
             </div>
         </section>
 
-        <!-- Education Section -->
         <section class="bg-white rounded-xl shadow-lg p-8">
             <h2 class="text-2xl font-semibold mb-4 text-gray-900">Education</h2>
             <div class="space-y-4">
@@ -136,13 +126,125 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-200 py-6 mt-8">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600">
             <p>&copy; 2025 Joseph G. Biare. All rights reserved.</p>
         </div>
     </footer>
+
+    <div id="skillModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl p-6 relative">
+            <span id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-900 cursor-pointer text-2xl font-bold">&times;</span>
+            <h2 id="modalTitle" class="text-2xl font-bold mb-4">Skill Details</h2>
+            <div id="modalContent" class="text-gray-700">
+                </div>
+        </div>
+    </div>
+
+    <script>
+        // 1. Define the content for each skill
+        const skillData = {
+            virtualAssistance: {
+                title: 'How to Master Virtual Assistance',
+                steps: [
+                    'Develop strong organizational skills using tools like Trello or Asana.',
+                    'Master communication tools such as Slack, Zoom, and professional email etiquette.',
+                    'Learn to manage calendars effectively across different time zones (e.g., Google Calendar, Outlook).',
+                    'Gain proficiency in basic data entry and spreadsheet management with Excel or Google Sheets.',
+                    'Build a portfolio of administrative tasks you can perform reliably and efficiently.'
+                ]
+            },
+            customerRelations: {
+                title: 'Building Strong Customer Relations',
+                steps: [
+                    'Practice active listening to fully understand customer needs and concerns.',
+                    'Develop empathy to connect with customers on a personal level.',
+                    'Master clear and positive communication, both written and verbal.',
+                    'Learn conflict resolution techniques to handle complaints effectively.',
+                    'Follow up with customers to ensure their issues are resolved and they are satisfied.'
+                ]
+            },
+            problemSolving: {
+                title: 'A Framework for Problem-Solving',
+                steps: [
+                    'Clearly define the problem you are trying to solve.',
+                    'Gather information and analyze the root cause of the issue.',
+                    'Brainstorm multiple potential solutions without judgment.',
+                    'Evaluate the pros and cons of each solution and select the best one.',
+                    'Implement the chosen solution and monitor the results.'
+                ]
+            },
+            communication: {
+                title: 'Becoming an Effective Communicator',
+                steps: [
+                    'Practice clarity and conciseness in your speech and writing.',
+                    'Learn to adapt your communication style to your audience.',
+                    'Pay attention to non-verbal cues like body language and tone of voice.',
+                    'Ask open-ended questions to encourage dialogue.',
+                    'Practice giving and receiving constructive feedback gracefully.'
+                ]
+            },
+            timeManagement: {
+                title: 'Improving Your Time Management',
+                steps: [
+                    'Prioritize tasks using a system like the Eisenhower Matrix (Urgent/Important).',
+                    'Break large tasks down into smaller, manageable steps.',
+                    'Use a planner or digital calendar to schedule your time and set deadlines.',
+                    'Minimize distractions by turning off notifications and setting focus periods.',
+                    'Take regular breaks to avoid burnout and maintain productivity.'
+                ]
+            },
+            salesRetention: {
+                title: 'Excelling in Sales & Retention',
+                steps: [
+                    'Thoroughly understand the product or service you are selling.',
+                    'Identify customer needs and highlight how your service provides a solution.',
+                    'Build rapport and trust with potential and existing customers.',
+                    'Learn to handle objections professionally and persuasively.',
+                    'Create a follow-up system to nurture leads and check in with existing customers.'
+                ]
+            }
+        };
+
+        // 2. Get references to the modal elements
+        const modal = document.getElementById('skillModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalContent = document.getElementById('modalContent');
+        const closeModalBtn = document.getElementById('closeModal');
+
+        // 3. Function to open the modal and populate it with content
+        function openModal(skillKey) {
+            if (skillData[skillKey]) {
+                const skill = skillData[skillKey];
+                modalTitle.textContent = skill.title;
+                
+                // Create an ordered list for the steps
+                let contentHtml = '<ol class="list-decimal list-inside space-y-2">';
+                skill.steps.forEach(step => {
+                    contentHtml += `<li>${step}</li>`;
+                });
+                contentHtml += '</ol>';
+                
+                modalContent.innerHTML = contentHtml;
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+        }
+
+        // 4. Function to close the modal
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // 5. Add event listeners
+        closeModalBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+
 </body>
 </html>
-
-
